@@ -2,7 +2,7 @@ name: Sonar Cloud - Branch Analysis
 on: 
   push:
     branches:
-      - master
+      - master1
 
 env:
   AWS_REGION: us-east-1
