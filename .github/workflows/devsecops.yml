@@ -100,6 +100,6 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'node-lb-1473749717.us-east-1.elb.amazonaws.com'
+          target: 'http://node-lb-1473749717.us-east-1.elb.amazonaws.com/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
