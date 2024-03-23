@@ -2,8 +2,7 @@ name: Sonar Cloud - Branch Analysis
 on: 
   push:
     branches:
-      - master1
-
+      - master
 env:
   AWS_REGION: us-east-1
   ECR_REPOSITORY: node
@@ -101,6 +100,6 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'https://laitkor.com'
+          target: 'node-lb-1473749717.us-east-1.elb.amazonaws.com'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
